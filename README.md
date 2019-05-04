@@ -15,8 +15,8 @@ We require Luma3DS 7.2 or above. You can check this version by holding SELECT wh
 You must have either a physical DGS cartridge inserted or a digital DGS copy installed to your 3DS.
 
 **It is very important that you follow this guide and do not experiment on your own if something goes wrong. Make sure you see the DGS logo on the top screen in Step 3.**
-### **IF YOU INSTALL THIS PATCHER TO THE FIRM PARTITION VIA GODMODE9, YOU WILL BRICK AND NEED A FLASHCARD TO RECOVER!**
-*If you follow this guide and do not experiment, this is **perfectly safe**. Ask on the FTI Discord (https://discord.gg/3nYQ9aG) in #dai-gyakuten-saiban if you need help or assistance.*
+### **Warning: installing this firm to your FIRM partition will require you to follow the iderped guide at the bottom of this page.**
+*This is **perfectly safe**. Ask on the FTI Discord (https://discord.gg/3nYQ9aG) in #dai-gyakuten-saiban if you need help or assistance.*
 
 1. Download the latest release from this repository: https://github.com/ScarletStudy/DGS1-3DS-Release/releases/latest
 2. Extract the release to the root of your 3DS SD Card. `DGS1-Patcher.firm` goes into `sd:/luma/payloads/`, `DGS1-PatchData-v2.X.X.bps` goes into `sd:/3DS/ScarletStudy/`.
@@ -29,3 +29,13 @@ You must have either a physical DGS cartridge inserted or a digital DGS copy ins
 You may now run The Great Ace Attorney on your console, and will only need to repeat these steps to install a new update.
 
 Unfortunately, the Banner can not be translated via a Game Update. The eManual is in English, however.
+
+### **iderped Guide**
+Although installing the patching firm is something you probably won't do on accident, it's not too hard to fix.
+1. Download the latest SafeB9SInstaller from its repository: https://github.com/d0k3/SafeB9SInstaller/releases
+2. Download the latest Boot9Strap from its repository: https://github.com/SciresM/boot9strap/releases/
+3. Place the `SafeB9SInstaller.firm` on the root of your SD card (that's outside any folders) renamed to `iderped.firm`
+4. Place the extracted contents of Boot9Strap's zip in `SD:/boot9strap`.
+5. Turn your 3DS on and follow the on screen prompt to reinstall Boot9Strap.
+
+Congratulations! Your 3DS will now load Luma from its boot.firm, just like it did before.
